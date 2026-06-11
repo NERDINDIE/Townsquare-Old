@@ -1,0 +1,393 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-body: 'Roboto';
+    --font-headline: 'Playfair Display';
+
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --brand-newsstand: 220 13% 69%;
+    --brand-bulletin-board: 22 95% 55%;
+    --brand-bookworm: 30 70% 50%;
+    --brand-the-community-post: 12 76% 61%;
+    --brand-the-downtown-dish: 340 82% 52%;
+    --brand-the-urbanist: 210 89% 53%;
+    --brand-the-business-beat: 195 85% 41%;
+    --brand-city-soundwaves: 270 78% 55%;
+    --brand-marketplace: 48 96% 58%;
+    --brand-takeouts: 160 84% 39%;
+    --brand-map-pin: 190 70% 50%;
+    --brand-tyres: 240 2% 50%;
+    --brand-dlc: 260 85% 60%;
+    --brand-exchange: 150 70% 45%;
+    --brand-charts: 200 80% 55%;
+    --brand-arcade-saloon: 300 85% 55%;
+    --brand-on-air: 0 84.2% 60.2%;
+    --brand-broadcast: 345 85% 55%;
+    --brand-funnies: 280 85% 60%;
+    --brand-weatherman: 207 44% 49%;
+    --brand-remote-control: 220 75% 55%;
+    --brand-orientations: 300 85% 55%;
+    --brand-retro: 50 95% 55%;
+    --brand-anime-shinbun: 350 95% 55%;
+    --brand-editor-pro: 240 80% 60%;
+    --brand-fandom-times: 350 82% 52%;
+    --brand-tickets: 265 82% 60%;
+    --brand-yeast: 35 55% 50%;
+    --brand-matches: 120 60% 40%;
+    --brand-beasts: 30 40% 30%;
+    --brand-yesilcam: 160 50% 45%;
+    --brand-rest-area: 195 53% 49%;
+    --brand-palapa: 35 92% 60%;
+    --brand-hatay: 0 65% 50%;
+    --brand-nicosia: 40 85% 55%;
+    --brand-famagusta: 200 50% 45%;
+    --brand-rendezvous: 340 90% 60%;
+    --brand-star-chart: 250 70% 55%;
+    --brand-silver-screen: 210 10% 60%;
+    --brand-tech-pulse: 205 90% 55%;
+    --brand-game-on: 275 80% 50%;
+    --brand-vitality: 130 60% 45%;
+    --brand-the-curator: 30 60% 50%;
+    --brand-aura: 330 80% 70%;
+    --brand-the-grapevine: 350 85% 60%;
+  }
+
+  .theme-morning {
+    --font-body: 'Roboto', sans-serif;
+    --font-headline: 'Playfair Display', serif;
+    --background: 48 83% 94%; /* Light Cream */
+    --foreground: 30 30% 25%; /* Dark Brown */
+    --primary: 340 82% 52%; /* Muted Pink */
+    --secondary: 45 50% 88%; /* Lighter Cream */
+    --card: 48 83% 98%; /* Almost white cream */
+  }
+
+  .theme-afternoon {
+    --font-body: 'Inter', sans-serif;
+    --font-headline: 'Inter', sans-serif;
+    --background: 210 40% 98%; /* Almost white */
+    --foreground: 222 47% 11%; /* Dark Blue */
+    --primary: 210 89% 53%; /* Bright Blue */
+    --secondary: 210 40% 94%;
+    --card: 0 0% 100%;
+  }
+
+  .theme-evening {
+    --font-body: 'Roboto Condensed', sans-serif;
+    --font-headline: 'Oswald', sans-serif;
+    --background: 222 47% 11%; /* Dark Blue */
+    --foreground: 210 40% 98%; /* Light Gray */
+    --primary: 22 95% 55%; /* Orange */
+    --secondary: 217 33% 18%;
+    --card: 222 47% 13%; /* Slightly lighter dark blue */
+  }
+
+  .theme-late-night {
+    --font-body: 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", monospace;
+    --font-headline: 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", monospace;
+    --background: 240 6% 10%; /* Almost Black */
+    --foreground: 240 5% 65%; /* Gray */
+    --primary: 150 70% 45%; /* Muted Green */
+    --secondary: 240 4% 16%;
+    --card: 240 4% 14%;
+  }
+
+  .font-classic {
+    --font-body: Arial, Helvetica, sans-serif;
+    --font-headline: Arial, Helvetica, sans-serif;
+  }
+  
+  .font-y2k {
+    --font-body: Arial, Helvetica, sans-serif;
+    --font-headline: Arial, Helvetica, sans-serif;
+  }
+
+  .font-inter {
+    --font-body: 'Inter', sans-serif;
+    --font-headline: 'Inter', sans-serif;
+  }
+
+  .font-monospace {
+    --font-body: 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", monospace;
+    --font-headline: 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", monospace;
+  }
+  
+  .font-teletext {
+    --font-body: 'VT323', monospace;
+    --font-headline: 'VT323', monospace;
+  }
+
+  .font-uncial {
+    --font-body: 'Uncial Antiqua', system-ui;
+    --font-headline: 'Uncial Antiqua', system-ui;
+  }
+  
+  .font-oswald {
+    --font-body: 'Oswald', sans-serif;
+    --font-headline: 'Oswald', sans-serif;
+  }
+
+  .font-tabloid {
+    --font-body: 'Times New Roman', Times, serif;
+    --font-headline: 'Oswald', sans-serif;
+  }
+
+  .font-broadsheet {
+    --font-body: 'Times New Roman', Times, serif;
+    --font-headline: 'Playfair Display', serif;
+  }
+  
+  .font-keitai {
+    --font-body: 'DotGothic16', sans-serif;
+    --font-headline: 'DotGothic16', sans-serif;
+  }
+
+  .font-pride {
+    --font-body: 'Roboto', sans-serif;
+    --font-headline: 'Playfair Display', serif;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 217 33% 18%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 18%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 33% 18%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --ring: 210 40% 98%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --brand-newsstand: 220 13% 69%;
+    --brand-bulletin-board: 22 95% 55%;
+    --brand-bookworm: 30 70% 50%;
+    --brand-the-community-post: 12 76% 61%;
+    --brand-the-downtown-dish: 340 82% 52%;
+    --brand-the-urbanist: 210 89% 53%;
+    --brand-the-business-beat: 195 85% 41%;
+    --brand-city-soundwaves: 270 78% 55%;
+    --brand-marketplace: 48 96% 58%;
+    --brand-takeouts: 160 84% 39%;
+    --brand-map-pin: 190 70% 50%;
+    --brand-tyres: 240 2% 50%;
+    --brand-dlc: 260 85% 60%;
+    --brand-exchange: 150 70% 45%;
+    --brand-charts: 200 80% 55%;
+    --brand-arcade-saloon: 300 85% 55%;
+    --brand-on-air: 0 84.2% 60.2%;
+    --brand-broadcast: 345 85% 55%;
+    --brand-funnies: 280 85% 60%;
+    --brand-weatherman: 207 44% 49%;
+    --brand-remote-control: 220 75% 55%;
+    --brand-orientations: 300 85% 55%;
+    --brand-retro: 50 95% 55%;
+    --brand-anime-shinbun: 350 95% 55%;
+    --brand-editor-pro: 240 80% 60%;
+    --brand-fandom-times: 350 82% 52%;
+    --brand-tickets: 265 82% 60%;
+    --brand-yeast: 35 55% 50%;
+    --brand-matches: 120 60% 40%;
+    --brand-beasts: 30 40% 30%;
+    --brand-yesilcam: 160 50% 45%;
+    --brand-rest-area: 195 53% 49%;
+    --brand-palapa: 35 92% 60%;
+    --brand-hatay: 0 65% 50%;
+    --brand-nicosia: 40 85% 55%;
+    --brand-famagusta: 200 50% 45%;
+    --brand-rendezvous: 340 90% 60%;
+    --brand-star-chart: 250 70% 55%;
+    --brand-silver-screen: 210 10% 60%;
+    --brand-tech-pulse: 205 90% 55%;
+    --brand-game-on: 275 80% 50%;
+    --brand-vitality: 130 60% 45%;
+    --brand-the-curator: 30 60% 50%;
+    --brand-aura: 330 80% 70%;
+    --brand-the-grapevine: 350 85% 60%;
+  }
+
+  .theme-monochrome {
+    --background: 0 0% 7.8%;
+    --foreground: 0 100% 50%;
+    --card: 0 0% 11.8%;
+    --card-foreground: 0 100% 50%;
+    --popover: 0 0% 7.8%;
+    --popover-foreground: 0 100% 50%;
+    --primary: 0 100% 50%;
+    --primary-foreground: 0 0% 7.8%;
+    --secondary: 0 100% 50%;
+    --secondary-foreground: 0 0% 7.8%;
+    --muted: 0 0% 11.8%;
+    --muted-foreground: 0 100% 50% / 0.6;
+    --accent: 0 0% 11.8%;
+    --accent-foreground: 0 100% 50%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 7.8%;
+    --border: 0 100% 50% / 0.2;
+    --input: 0 100% 50% / 0.2;
+    --ring: 0 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+@layer utilities {
+    .animate-marquee {
+        animation: marquee 30s linear infinite;
+    }
+
+    @keyframes marquee {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+    
+    .pause:hover {
+        animation-play-state: paused;
+    }
+
+    .rainbow-text {
+        background: linear-gradient(to right, #ef4444, #f97316, #eab308, #84cc16, #22c55e, #14b8a6, #06b6d4, #3b82f6, #8b5cf6, #d946ef);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .font-y2k .retro-blog-container {
+        @apply max-w-3xl mx-auto p-4 sm:p-8 bg-gray-100 text-black font-sans;
+    }
+
+    .font-y2k .retro-blog-header {
+        @apply text-center border-b-4 border-double border-gray-400 pb-4 mb-6;
+    }
+
+    .font-y2k .retro-blog-title {
+        @apply text-3xl font-bold text-blue-800;
+    }
+    
+    .font-y2k .retro-blog-meta {
+        @apply text-sm text-gray-600 mt-2;
+    }
+
+    .font-y2k .retro-blog-content {
+        @apply prose prose-lg max-w-none;
+    }
+    
+    .font-y2k .retro-blog-image {
+        @apply my-4 border-4 border-white shadow-lg;
+    }
+    
+    .font-y2k .retro-blog-comments {
+        @apply mt-8 pt-6 border-t-2 border-gray-300;
+    }
+
+    .font-y2k .retro-blog-comments h3 {
+        @apply text-xl font-bold mb-4;
+    }
+
+    .font-y2k .retro-blog-comment-form {
+        @apply bg-gray-200 p-4 rounded-md mb-6;
+    }
+
+    .font-y2k .retro-blog-comment-form h4 {
+        @apply font-semibold mb-2;
+    }
+
+    .font-y2k .retro-blog-comment-form textarea {
+        @apply w-full p-2 border border-gray-400 rounded-md;
+    }
+    
+    .font-y2k .retro-blog-comment-form button {
+        @apply bg-blue-600 text-white px-4 py-2 rounded-md mt-2 hover:bg-blue-700;
+    }
+
+    .font-y2k .retro-blog-comment {
+        @apply border border-gray-300 bg-white p-3 rounded-md mb-4;
+    }
+    
+    .font-y2k .retro-blog-comment p {
+        @apply m-0;
+    }
+
+    .font-y2k .retro-blog-comment span {
+        @apply text-xs text-gray-500 block text-right;
+    }
+    
+    .font-y2k .retro-blog-footer {
+        @apply text-center mt-8;
+    }
+    
+    .font-y2k .retro-blog-footer a {
+        @apply text-blue-700 underline;
+    }
+}

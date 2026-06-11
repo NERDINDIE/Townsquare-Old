@@ -1,0 +1,291 @@
+
+export interface Brand {
+    name: string;
+    slug: string;
+    description: string;
+    image: string;
+    dataAiHint: string;
+}
+
+export const brands: Brand[] = [
+    {
+        name: 'Newsstand',
+        slug: 'newsstand',
+        description: 'Your daily news roundup',
+        image: 'https://storage.googleapis.com/studioprompt-images/post-office-newsstand.jpg',
+        dataAiHint: 'newspaper stand',
+    },
+    {
+        name: 'Bulletin Board',
+        slug: 'bulletin-board',
+        description: 'Post and share with the community.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'community bulletin board',
+    },
+    {
+        name: 'Bookworm',
+        slug: 'bookworm',
+        description: 'Your primary brand for all things literature.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'books library',
+    },
+    {
+        name: 'The Community Post',
+        slug: 'the-community-post',
+        description: 'Stories from our local community.',
+        image: 'https://placehold.co/400/900.png',
+        dataAiHint: 'city street',
+    },
+    {
+        name: 'The Downtown Dish',
+        slug: 'the-downtown-dish',
+        description: 'The best food and culture in town.',
+        image: 'https://placehold.co/400/900.png',
+        dataAiHint: 'restaurant interior',
+    },
+    {
+        name: 'The Urbanist',
+        slug: 'the-urbanist',
+        description: 'Exploring the city\'s architecture.',
+        image: 'https://placehold.co/400/900.png',
+        dataAiHint: 'modern architecture',
+    },
+    {
+        name: 'The Business Beat',
+        slug: 'the-business-beat',
+        description: 'Latest trends in the business world.',
+        image: 'https://placehold.co/400/900.png',
+        dataAiHint: 'office meeting',
+    },
+    {
+        name: 'City Soundwaves',
+        slug: 'city-soundwaves',
+        description: 'Sounds from our city and beyond.',
+        image: 'https://placehold.co/400/900.png',
+        dataAiHint: 'live concert',
+    },
+    {
+        name: 'Marketplace',
+        slug: 'marketplace',
+        description: 'Deals, ads, and savings.',
+        image: 'https://placehold.co/400/900.png',
+        dataAiHint: 'shopping market',
+    },
+    {
+        name: 'Takeouts',
+        slug: 'takeouts',
+        description: 'Order from your favorite local restaurants.',
+        image: 'https://placehold.co/400/900.png',
+        dataAiHint: 'restaurant food',
+    },
+    {
+        name: 'Map Pin',
+        slug: 'map-pin',
+        description: 'Locations, maps, and routing.',
+        image: 'https://placehold.co/400/900.png',
+        dataAiHint: 'city map',
+    },
+    {
+        name: 'Tyres',
+        slug: 'tyres',
+        description: 'Car rentals and automotive articles.',
+        image: 'https://placehold.co/400/900.png',
+        dataAiHint: 'car dashboard',
+    },
+    {
+        name: 'DLC',
+        slug: 'dlc',
+        description: 'Downloadable content for your devices.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'abstract digital pattern',
+    },
+    {
+        name: 'Exchange',
+        slug: 'exchange',
+        description: 'Currency and stock market news.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'stock market graph',
+    },
+    {
+        name: 'Charts',
+        slug: 'charts',
+        description: 'Data visualizations and financial analysis.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'financial charts',
+    },
+    {
+        name: 'Arcade Saloon',
+        slug: 'arcade-saloon',
+        description: 'Classic and modern games to play.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'arcade games',
+    },
+    {
+        name: 'On Air',
+        slug: 'on-air',
+        description: 'Live news and updates as they happen.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'live news studio',
+    },
+    {
+        name: 'Broadcast',
+        slug: 'broadcast',
+        description: 'Live and on-demand audio and video.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'radio broadcast tower',
+    },
+    {
+        name: 'Funnies',
+        slug: 'funnies',
+        description: 'Comics, newspaper strips, and memes.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'comic book',
+    },
+    {
+        name: 'Anime Shinbun',
+        slug: 'anime-shinbun',
+        description: 'News from the world of anime and manga.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'anime character',
+    },
+    {
+        name: 'Weatherman',
+        slug: 'weatherman',
+        description: 'Weather forecasts and natural disaster coverage.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'weather map',
+    },
+    {
+        name: 'Remote Control',
+        slug: 'remote-control',
+        description: 'Radio, streaming, and TV listings.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'television screen static',
+    },
+    {
+        name: 'Orientations',
+        slug: 'orientations',
+        description: 'Queer perspectives and identity acceptance.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'pride flag',
+    },
+    {
+        name: 'Fandom Times',
+        slug: 'fandom-times',
+        description: 'An archival look at fandom news.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'fandom collage',
+    },
+    {
+        name: 'Tickets',
+        slug: 'tickets',
+        description: 'Cultural events and ticket purchasing.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'concert tickets',
+    },
+    {
+        name: 'Yeast',
+        slug: 'yeast',
+        description: 'All things agricultural, farms, and rural life.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'wheat field farm',
+    },
+    {
+        name: 'Townsquares',
+        slug: 'townsquares',
+        description: 'Cyber-neighborhoods to explore.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'digital city grid'
+    },
+    {
+        name: 'Matches',
+        slug: 'matches',
+        description: 'All things sport with some chooseable widgets.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'sports stadium'
+    },
+    {
+        name: 'Beasts',
+        slug: 'beasts',
+        description: 'Your home for nature, wildlife, and zoology.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'wildlife animal'
+    },
+    {
+        name: 'Rest Area',
+        slug: 'rest-area',
+        description: 'Guides, tips, and stories for the modern traveler.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'highway road trip'
+    },
+    {
+        name: 'Palapa',
+        slug: 'palapa',
+        description: 'Your destination for summer, sun, and vacation vibes.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'beach palapa summer'
+    },
+    {
+        name: 'Rendezvous',
+        slug: 'rendezvous',
+        description: 'Meet new people and find your match.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'dating app couple'
+    },
+    {
+        name: 'Star Chart',
+        slug: 'star-chart',
+        description: 'Daily horoscopes and astrological insights.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'zodiac wheel horoscope',
+    },
+    {
+        name: 'Silver Screen',
+        slug: 'silver-screen',
+        description: 'Reviews, news, and features from the world of cinema.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'vintage film projector',
+    },
+    {
+        name: 'Tech Pulse',
+        slug: 'tech-pulse',
+        description: 'The latest in gadgets, startups, and innovation.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'glowing circuit board',
+    },
+    {
+        name: 'Game On',
+        slug: 'game-on',
+        description: 'Videogame news, reviews, and culture.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'retro video game controller',
+    },
+    {
+        name: 'Vitality',
+        slug: 'vitality',
+        description: 'Your guide to a healthy and active lifestyle.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'person meditating sunset',
+    },
+    {
+        name: 'The Curator',
+        slug: 'the-curator',
+        description: 'A curated look at modern lifestyle and design.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'minimalist home interior',
+    },
+    {
+        name: 'Aura',
+        slug: 'aura',
+        description: 'Beauty trends, skincare tips, and wellness.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'cosmetics beauty products',
+    },
+    {
+        name: 'The Grapevine',
+        slug: 'the-grapevine',
+        description: 'The latest celebrity news and society gossip.',
+        image: 'https://placehold.co/400x900.png',
+        dataAiHint: 'paparazzi camera flash',
+    },
+];
